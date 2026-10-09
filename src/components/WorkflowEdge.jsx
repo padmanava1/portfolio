@@ -79,7 +79,7 @@ export default function WorkflowEdge() {
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5">
-            {['Cursor IDE', 'Claude Code', 'Google Antigravity', 'Riverpod Generators', 'FastAPI Scrapers'].map((tool) => (
+            {['Cursor IDE', 'Claude Code', 'Google Antigravity', 'Riverpod CodeGen', 'Python (NumPy / Pandas)'].map((tool) => (
               <span
                 key={tool}
                 className="px-3.5 py-1.5 rounded-lg bg-slate-800/90 text-slate-200 text-xs font-mono border border-slate-700/80 font-medium"

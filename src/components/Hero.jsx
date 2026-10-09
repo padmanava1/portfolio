@@ -10,7 +10,9 @@ import {
   ShieldCheck, 
   Layers, 
   Zap, 
-  Sparkles 
+  Sparkles,
+  Smartphone,
+  Clock
 } from 'lucide-react';
 
 export default function Hero() {
@@ -39,11 +41,15 @@ export default function Hero() {
             <div className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-flutter-500/10 text-flutter-300 border border-flutter-500/20">
                 <Zap className="w-3.5 h-3.5 text-flutter-400" />
-                4.5+ Years Production Experience
+                4.5+ Years Experience
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-800/60 text-slate-300 border border-slate-700/50">
-                <MapPin className="w-3.5 h-3.5 text-slate-400" />
-                {personalInfo.location}
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
+                <Smartphone className="w-3.5 h-3.5 text-cyan-400" />
+                200+ Screens Delivered
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/25">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                {personalInfo.availability}
               </span>
             </div>
 
@@ -53,7 +59,7 @@ export default function Hero() {
                 Hi, I'm <span className="gradient-flutter">{personalInfo.name}</span>
               </h1>
               <p className="mt-4 text-xl sm:text-2xl font-semibold text-slate-200 tracking-tight leading-snug">
-                Flutter Software Engineer
+                {personalInfo.role}
               </p>
               <p className="mt-2 text-base sm:text-lg text-flutter-300/90 font-medium leading-relaxed">
                 {personalInfo.headline}
@@ -114,8 +120,8 @@ export default function Hero() {
                 <span>Clean Architecture (Riverpod / BLoC)</span>
               </div>
               <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-flutter-400" />
-                <span>10x AI-Augmented Workflow</span>
+                <Clock className="w-4 h-4 text-emerald-400" />
+                <span>50–60 Tickets/Day (Claude Code Automation)</span>
               </div>
             </div>
 
@@ -143,10 +149,10 @@ export default function Hero() {
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#0E131F]/90 backdrop-blur-md border border-slate-700/80 flex items-center justify-between shadow-lg">
                   <div>
                     <span className="text-xs font-semibold text-white block">Padmanava Karmakar</span>
-                    <span className="text-[11px] text-flutter-300 font-mono">Software Engineer @ Bacancy</span>
+                    <span className="text-[11px] text-flutter-300 font-mono">AI Flutter Engineer @ Bacancy</span>
                   </div>
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-semibold border border-emerald-500/30">
-                    Active
+                    Immediate Joiner
                   </span>
                 </div>
               </div>
@@ -163,7 +169,7 @@ export default function Hero() {
               <div className="absolute -bottom-4 -left-4 bg-[#0E131F]/95 backdrop-blur-md border border-slate-700/90 rounded-xl px-3.5 py-2 shadow-xl">
                 <div className="flex items-center gap-2">
                   <span className="text-base">⚡</span>
-                  <span className="text-xs font-bold text-slate-100">AI-Augmented Velocity</span>
+                  <span className="text-xs font-bold text-slate-100">50–60 Tickets/Day (Claude Code)</span>
                 </div>
               </div>
 

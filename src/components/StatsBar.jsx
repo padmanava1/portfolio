@@ -1,9 +1,9 @@
 import React from 'react';
 import { stats } from '../data/portfolioData';
-import { Briefcase, Smartphone, Users, Zap } from 'lucide-react';
+import { Briefcase, Smartphone, CheckCircle2, Zap } from 'lucide-react';
 
 export default function StatsBar() {
-  const icons = [Briefcase, Smartphone, Users, Zap];
+  const icons = [Briefcase, Smartphone, CheckCircle2, Zap];
 
   return (
     <section className="py-12 border-y border-slate-800/80 bg-[#0A0E17]/60 relative z-20">

@@ -1,30 +1,31 @@
 export const personalInfo = {
   name: "Padmanava Karmakar",
-  role: "Flutter Software Engineer",
+  role: "AI Flutter Engineer",
   headline: "Building High-Performance Cross-Platform Apps with Clean Architecture & AI-Augmented Velocity",
-  bio: "Software Engineer with 4.5+ years of production experience shipping high-impact, cross-platform apps for iOS & Android. Specialized in Clean Architecture, real-time encrypted communications, high-concurrency geolocation systems, and Python backend integration. Known for accelerating the SDLC by 10x through rigorous engineering and modern AI-augmented workflows.",
-  location: "Ahmedabad, India",
+  bio: "AI Flutter Engineer with 4.5+ years of production experience shipping high-impact, cross-platform apps for iOS & Android across healthcare (HIPAA), e-commerce, logistics, and real-time systems. Advanced practitioner of AI-assisted development (Claude Code, Cursor, Antigravity)—automated an end-to-end workflow resolving 50–60 tickets/day on deadline-critical client deliveries while enforcing strict Clean Architecture.",
+  location: "Ahmedabad, Gujarat, India",
+  availability: "Immediate Joiner • Open to Relocation",
   email: "karpadmanava16@gmail.com",
   phone: "+91-7908767307",
   linkedin: "https://www.linkedin.com/in/padmanava-karmakar-5069641b6",
   github: "https://github.com/padmanava1",
   resumeUrl: "./Padmanava_Karmakar_Resume.pdf",
   profileImg: "./profile.jpg",
-  status: "Open to Opportunities",
+  status: "Immediate Joiner",
 };
 
 export const stats = [
   { label: "Production Experience", value: "4.5+ Yrs", sub: "Bacancy & Radixweb" },
-  { label: "Production Screens", value: "50+ Screens", sub: "HIPAA & Enterprise" },
-  { label: "Concurrent Scale", value: "1,000+ Users", sub: "Real-time Sockets & Maps" },
-  { label: "Delivery Velocity", value: "10x Faster", sub: "Disciplined AI-Augmented SDLC" },
+  { label: "Production Screens", value: "200+ Screens", sub: "HIPAA, Commerce, Logistics" },
+  { label: "Ticket Velocity", value: "50-60/Day", sub: "Claude Code Automated Workflow" },
+  { label: "Delivery Multiplier", value: "10x Velocity", sub: "Disciplined AI-Augmented SDLC" },
 ];
 
 export const featuredProjects = [
   {
     id: "the-word",
     title: "The Word",
-    tagline: "Social Impact & Community Platform with Military-Grade E2EE Messaging",
+    tagline: "Social Impact Platform with Military-Grade E2EE Messaging & Gemini AI",
     badge: "Security & Real-Time",
     category: "Mobile",
     featuredRank: 1,
@@ -36,35 +37,35 @@ export const featuredProjects = [
       "Flutter", "Dart", "Material Design 3", "Riverpod",
       "Firebase (Firestore, Auth, Storage, Functions)",
       "PointyCastle (RSA/AES)", "Flutter Secure Storage",
-      "Typesense Search", "Stripe", "FCM"
+      "Typesense Search", "Google Gemini AI", "Stripe", "FCM"
     ],
     highlights: [
       "Custom E2EE Messaging: Built military-grade RSA/AES encryption with secure key exchange and optional privacy toggles.",
+      "Google Gemini AI & Semantic Search: Integrated Gemini AI features and Typesense search for intelligent cause and charity discovery.",
       "Stripe Payment Gateway: Processed secure credit card donations, receipts, and corporate matching.",
-      "Typesense Semantic Search: Ultra-fast discovery filtering across causes, geographical locations, and charity verification.",
       "Real-Time Chat & Media: Video/photo compression, caching, unread tracking, and push notifications via FCM."
     ]
   },
   {
     id: "telemedicine",
     title: "TeleMedicine Platform",
-    tagline: "HIPAA-Compliant Multi-Portal Healthcare System (50+ Screens)",
+    tagline: "HIPAA-Compliant Multi-Portal Healthcare System with Video Calling",
     badge: "Healthcare & Fintech",
     category: "Mobile & APIs",
     featuredRank: 2,
-    teamSize: "Sole Flutter Dev (1 of 4 Backend API Devs)",
-    role: "Mobile & Backend API Developer",
-    summary: "A production-grade, HIPAA-compliant telehealth platform with three distinct role-based portals: Patient, Doctor, and Admin, complete with end-to-end appointment scheduling, video consultation flow, and earnings management.",
-    architectureHighlight: "Built the entire Flutter frontend from scratch across all 3 portals (50+ screens) and designed the full 60+ endpoint /api/mobile/* REST API layer.",
+    teamSize: "Sole Flutter Dev (1 of 4 Mobile API Developers)",
+    role: "Mobile Module Lead & API Developer",
+    summary: "A production-grade, HIPAA-compliant telehealth platform with three distinct role-based portals: Patient, Doctor, and Admin, complete with video consultations (Jitsi Meet SDK) and appointment booking.",
+    architectureHighlight: "Built the entire Flutter frontend from scratch across all 3 portals (50+ screens) and adapted the platform's Next.js web APIs for mobile compatibility across auth, patient, doctor, and admin flows.",
     techStack: [
       "Flutter", "Dart", "Riverpod", "Dio", "GoRouter",
-      "flutter_secure_storage", "Stripe", "REST APIs",
-      "Role-Based Access (MFA)", "Multi-flavor Builds"
+      "Jitsi Meet SDK", "flutter_secure_storage", "Stripe",
+      "Next.js API Layer", "Role-Based MFA", "Build Flavors"
     ],
     highlights: [
       "50+ Screens Across 3 Portals: Single codebase catering to Patient, Doctor, and Admin experiences.",
-      "60+ Endpoint REST API: Designed and implemented secure endpoints consumed by the mobile apps.",
-      "End-to-End Booking Lifecycle: Doctor schedule lookup, appointment reservation, and Stripe checkout verification.",
+      "Video Consultations: Integrated Jitsi Meet SDK for smooth doctor–patient remote video sessions.",
+      "End-to-End Booking Lifecycle: Doctor schedule lookup, slot selection, and Stripe checkout verification.",
       "HIPAA Security Hardening: Email-OTP Multi-Factor Authentication, idle-session auto-logout, and secure token caching.",
       "Flavors & Packaging: Configured dev and prod environments for seamless iOS and Android releases."
     ]
@@ -79,58 +80,102 @@ export const featuredProjects = [
     teamSize: "2 developers, QA, Manager",
     role: "Software Engineer",
     summary: "A multi-app London-based ecosystem encompassing driver parcel collection/delivery tracking via Mapbox and luxury gold, silver, and platinum trading apps with live foreign exchange pricing.",
-    architectureHighlight: "Refactored collection workflow with Riverpod and integrated Mapbox API for live London dispatch tracking mirrored in real-time on the management panel.",
+    architectureHighlight: "Revamped collection workflow with Riverpod and integrated Mapbox API for live London dispatch tracking mirrored in real-time on the management panel.",
     techStack: [
       "Flutter", "Dart", "Riverpod", "GetX", "Mapbox API",
       "REST APIs", "Live Foreign Exchange Rates", "Real-Time Sync"
     ],
     highlights: [
       "Goldbank Driver: Revamped London courier app with live GPS parcel collection/drop-off journeys using Mapbox API.",
-      "Goldbank Live: Interactive live showroom featuring luxury jewelry catalogues and streaming FX & cryptocurrency price tickers.",
+      "Goldbank Live: Interactive live showroom on App Store and Play Store featuring luxury jewelry and streaming FX & cryptocurrency price tickers.",
       "Sell Gold: Precision price-locking mechanism enabling customers to lock in real-time gold/silver prices with courier collection."
+    ]
+  },
+  {
+    id: "santa-com",
+    title: "Santa.com Full Ecosystem",
+    tagline: "Full-Stack AI-Powered E-Commerce Ecosystem (Mobile App, Admin & APIs)",
+    badge: "Full-Stack Ecosystem",
+    category: "Mobile & APIs",
+    featuredRank: 4,
+    teamSize: "Full Ecosystem Architecture",
+    role: "Full-Stack Mobile Engineer",
+    summary: "A complete end-to-end commerce ecosystem consisting of a Flutter mobile shopping app, a Node.js/Express REST backend with JWT authentication and PostgreSQL, and a React + Vite admin dashboard.",
+    architectureHighlight: "Architected the unified ecosystem: reactive Flutter mobile frontend with flutter_animate and Lottie, connected to a robust Node.js/Express API layer with Supabase/PostgreSQL and a modern React + Tailwind admin portal.",
+    techStack: [
+      "Flutter", "Riverpod", "GoRouter", "React + Vite",
+      "Tailwind CSS", "Node.js", "Express", "JWT Auth",
+      "Supabase", "PostgreSQL", "Firebase", "Lottie"
+    ],
+    highlights: [
+      "Full-Stack Ecosystem: Cross-platform Flutter mobile app + React/Vite admin dashboard + Node.js API.",
+      "AI & Interactive Shopping: Visual Search (snap-to-shop), AI Stylist, AR Try-On, social Squad Cart, and interactive price-haggle mode.",
+      "Admin Operations: Full admin suite for analytics, product/order/vendor management, vendor KYC, coupons, audit logs, and 2FA.",
+      "Catalog Depth: 200+ products across 10+ categories with instant search and category filters."
+    ]
+  },
+  {
+    id: "diginn",
+    title: "DigInn",
+    tagline: "Healthy Food Ordering App with Multi-Tier Loyalty Engine (Live on App Store & Play Store)",
+    badge: "Commerce & Loyalty",
+    category: "Mobile",
+    featuredRank: 5,
+    teamSize: "2 developers, QA, Tech Lead",
+    role: "Software Developer",
+    summary: "A restaurant mobile application focused on customized healthy meals, full nutritional and calorie tracking, pickup/delivery scheduling, and a 3-tier customer loyalty rewards system.",
+    architectureHighlight: "Structured Clean Architecture with GetX for reactive state management, integrated Thanx SDK for deep linking, and Isar database for offline caching.",
+    techStack: [
+      "Flutter", "Dart", "GetX", "Dio", "Retrofit",
+      "Thanx SDK", "Isar Database", "Firebase (FCM, Analytics)",
+      "Clean Architecture", "Unit Testing"
+    ],
+    highlights: [
+      "Multi-Tier Loyalty Engine: Custom reward tiering (Bronze, Silver, Gold) with signup and birthday rewards.",
+      "Nutritional Breakdown: Dynamic calorie, protein, and macro calculations updated in real-time as users customize meals.",
+      "Production Releases: Shipped multiple live releases to both Apple App Store and Google Play Store."
+    ]
+  },
+  {
+    id: "cafeasy",
+    title: "Cafeasy",
+    tagline: "Location-Aware RAG Recommendation Engine with Vector Search & Maps",
+    badge: "AI & Retrieval (RAG)",
+    category: "Python & AI",
+    featuredRank: 6,
+    teamSize: "AI-Assisted Personal Project",
+    role: "AI Engineer",
+    summary: "A location-aware Retrieval-Augmented Generation (RAG) recommendation engine running hybrid vector search over cafe data, grounding LLM outputs to eliminate hallucinations.",
+    architectureHighlight: "Grounded LLM responses strictly in retrieved vector records using ChromaDB dense embeddings; every recommended venue is verified against Google Maps coordinates on a real-time map.",
+    techStack: [
+      "Python", "ChromaDB", "Vector Embeddings", "LLMs",
+      "Google Maps API", "AI-Assisted Development"
+    ],
+    highlights: [
+      "Hallucination-Free Recommendations: Dense vector embeddings guarantee LLMs only recommend real, verified venues.",
+      "Google Maps Integration: Every recommendation links directly to verified Google Maps locations and displays on an interactive map.",
+      "AI-Augmented Build: Engineered end-to-end utilizing Claude Code and Cursor."
     ]
   },
   {
     id: "astraquant",
     title: "AstraQuant",
-    tagline: "AI-Driven Trading Intelligence & Predictive Analytics Platform (NSE/BSE)",
-    badge: "Python & ML Integration",
+    tagline: "AI Stock Intelligence & Explainable Predictions App (NSE/BSE)",
+    badge: "ML & Analytics",
     category: "Python & ML",
-    featuredRank: 4,
-    teamSize: "Independent Project (AI-Augmented)",
+    featuredRank: 7,
+    teamSize: "AI-Assisted Personal Project",
     role: "Full-Stack Engineer",
     summary: "Market intelligence app delivering ML-driven stock predictions, real-time sentiment analysis, portfolio tracking, and market regime detection for retail investors in Indian equity markets.",
-    architectureHighlight: "Flutter frontend communicating over WebSockets with a Python FastAPI backend; combines XGBoost, LightGBM, and custom expert models with SHAP-based explainability for prediction transparency.",
+    architectureHighlight: "Flutter frontend communicating over WebSockets; combines XGBoost, LightGBM, and custom expert models with SHAP-based explainability for prediction transparency.",
     techStack: [
-      "Flutter", "Riverpod", "fl_chart", "Python", "FastAPI",
+      "Flutter", "Riverpod", "fl_chart", "Python",
       "XGBoost", "LightGBM", "SHAP Explainability", "WebSockets", "Redis", "PostgreSQL"
     ],
     highlights: [
       "Real-Time WebSocket Streams: Ultra-low latency price and sentiment streaming with Redis caching.",
       "Explainable AI with SHAP: Allows investors to inspect exactly which fundamental and technical drivers influenced each forecast.",
-      "Interactive Charting: Smooth financial charts powered by fl_chart with custom timeframes and overlays.",
-      "Vibe Coded Architecture: Built organically and rapidly through disciplined AI-augmented prompting and iterative debugging."
-    ]
-  },
-  {
-    id: "rider-buddy",
-    title: "Rider Buddy",
-    tagline: "High-Accuracy Real-Time Group Cycling & Geolocation Engine",
-    badge: "Geolocation & Scale",
-    category: "Mobile",
-    featuredRank: 5,
-    teamSize: "Lead Developer",
-    role: "Software Engineer",
-    summary: "Real-time group cycling application featuring precision location sharing with up to 10m accuracy, QR-based group management, and dynamic mid-journey meeting point calculation.",
-    architectureHighlight: "Optimized Firebase real-time listeners and coordinate caching to support up to 1,000 concurrent riders while safeguarding mobile battery life.",
-    techStack: [
-      "Flutter", "Dart", "Firebase Firestore", "Google Maps API",
-      "Clustering Algorithms", "Compass Navigation", "Offline Sync"
-    ],
-    highlights: [
-      "10m High-Precision GPS: Live member status tracking with custom compass navigation and polyline route mapping.",
-      "Dynamic Meeting Points: Intelligent algorithm calculating meeting points for riders joining groups mid-ride.",
-      "Battery-Optimized Concurrency: Scaled to 1,000 simultaneous riders with clustered map rendering and offline sync."
+      "Interactive Charting: Smooth financial charts powered by fl_chart with custom timeframes and overlays."
     ]
   },
   {
@@ -139,14 +184,14 @@ export const featuredProjects = [
     tagline: "Indian Classical Music Education with C++ Audio Engine & Pitch Detection",
     badge: "Audio & Algorithms",
     category: "Mobile & Audio",
-    featuredRank: 6,
+    featuredRank: 8,
     teamSize: "Independent Project",
     role: "Software Engineer",
     summary: "Hindustani classical music training platform delivering sub-cent pitch detection accuracy, 40+ traditional raags, and zero-latency virtual harmonium with realistic bellow physics.",
     architectureHighlight: "Integrated flutter_soloud C++ audio engine for instantaneous acoustic response combined with FFT pitch detection and offline-first SQLite storage.",
     techStack: [
       "Flutter", "flutter_soloud (C++ Engine)", "FFT Pitch Detection",
-      "Provider", "fl_chart", "Supabase", "SQLite", "Material 3"
+      "Provider", "fl_chart", "Supabase", "SQLite", "Google Gemini"
     ],
     highlights: [
       "Zero-Latency C++ Audio Engine: Realistic virtual harmonium with bellow pressure physics.",
@@ -155,46 +200,48 @@ export const featuredProjects = [
     ]
   },
   {
-    id: "diginn-santa",
-    title: "DigInn & Santa.com",
-    tagline: "Modern Nutrition Commerce & AI-Enhanced Retail Platforms",
-    badge: "Commerce & Loyalty",
+    id: "rider-buddy",
+    title: "Rider Buddy",
+    tagline: "Real-Time Group Cycling Geolocation & Map Clustering Engine",
+    badge: "Geolocation & Maps",
     category: "Mobile",
-    featuredRank: 7,
-    teamSize: "Cross-functional Team",
-    role: "Software Developer",
-    summary: "DigInn healthy restaurant ordering system with multi-tier loyalty rewards (Bronze, Silver, Gold), and Santa.com modern Indian retail platform with smart catalog filters.",
-    architectureHighlight: "Implemented Clean Architecture with GetX and Riverpod, modular theme management, and integrated Thanx SDK deep linking.",
+    featuredRank: 9,
+    teamSize: "Mobile Developer",
+    role: "Software Engineer",
+    summary: "Real-time group cycling application featuring precision location sharing with up to ~10m accuracy, QR-based group management, and dynamic mid-journey meeting point calculation.",
+    architectureHighlight: "Optimized Firebase real-time listeners and coordinate caching to support seamless group sync while minimizing battery consumption.",
     techStack: [
-      "Flutter", "GetX", "Riverpod", "Dio", "Retrofit", "Isar Database", "Thanx SDK"
+      "Flutter", "Firebase", "Google Maps API",
+      "Coordinate Clustering", "Compass Navigation", "Offline Sync"
     ],
     highlights: [
-      "Multi-Tier Loyalty Engine: Custom reward accrual and redemption logic across 3 tiers.",
-      "Nutritional Breakdown Customizer: Dynamic macro and calorie calculations updated in real-time as users customize meals."
+      "~10m Precision GPS: Live member status tracking with custom compass navigation and polyline route mapping.",
+      "Dynamic Meeting Points: Intelligent algorithm calculating meeting points for riders joining groups mid-ride.",
+      "Marker Clustering: Clustered map rendering for smooth 60fps interaction and low battery consumption."
     ]
   }
 ];
 
 export const workflowHighlights = {
-  title: "The Workflow Edge: AI-Augmented Engineering",
-  subtitle: "Accelerating the SDLC by 10x without compromising Clean Architecture",
-  description: "I leverage cutting-edge AI dev tools (Cursor, Claude Code, Antigravity) as force multipliers. This isn't just generating code—it's disciplined 'Vibe Coding', where product ideas and architecture patterns are iterated at lightspeed while strict engineering rigor governs state management, type safety, and production scalability.",
+  title: "The AI-Assisted Workflow Edge",
+  subtitle: "50–60 Tickets/Day Velocity with Strict Clean Architecture",
+  description: "Advanced practitioner of modern AI-assisted engineering with Claude Code, Cursor, and Antigravity. Automated an end-to-end ticket lifecycle (pick up, implement, test, update, close) that resolved 50–60 tickets per day for several months on a deadline-critical client project, without compromising type safety, testability, or Clean Architecture.",
   principles: [
     {
-      title: "10x Fast Prototyping",
-      desc: "Transforming ambiguous product specs into working, reactive Flutter UIs in hours instead of days."
+      title: "50-60 Tickets / Day Automation",
+      desc: "Proven execution automating ticket resolution pipelines with Claude Code during high-stakes client delivery deadlines."
     },
     {
-      title: "Disciplined Clean Architecture",
-      desc: "Strict separation between UI, domain logic, and data layers. AI generates boilerplates, while human architecture guarantees maintainability."
+      title: "Strict Clean Architecture",
+      desc: "Separation of Presentation, Domain, and Data layers. AI generates code rapidly; human engineering enforces SOLID design, dependency injection (GetIt), and state isolation."
     },
     {
-      title: "Rapid Real-Time Debugging",
-      desc: "Instant reproduction of edge cases, asynchronous concurrency bugs, and state desyncs using conversational AI tools."
+      title: "Real-Time Debugging & Tests",
+      desc: "Writing unit, widget, and integration tests at lightspeed, catching asynchronous race conditions before code touches PR."
     },
     {
-      title: "Cross-Stack Fluidity",
-      desc: "Effortlessly bridging Flutter frontend with Python/FastAPI backends, scrapers, and data services."
+      title: "Python Data Scripting",
+      desc: "Practical Python proficiency (NumPy, Pandas, Matplotlib) for data manipulation, embedding pipelines, and scripts powered by modern AI dev tools."
     }
   ]
 };
@@ -204,36 +251,40 @@ export const skillsData = {
     title: "Flutter & Mobile Core",
     icon: "Smartphone",
     skills: [
-      "Flutter & Dart (4.5+ Yrs)", "Riverpod", "BLoC & Cubit", "GetX", "Provider",
-      "Clean Architecture", "MVVM Pattern", "Material Design 3", "flutter_animate & Lottie",
-      "Cross-Platform (iOS & Android)", "App Performance Optimization"
+      "Flutter 3 & Dart (4.5+ Yrs)", "Riverpod", "BLoC & Cubit", "GetX", "Provider",
+      "Clean Architecture", "MVVM & SOLID", "Dependency Injection (GetIt)",
+      "Material Design 3", "Responsive / Adaptive UI", "Platform Channels",
+      "Video Calling (Jitsi Meet SDK)", "flutter_animate & Lottie",
+      "App Performance Optimization", "App Store & Play Store Releases"
     ]
   },
-  backend: {
-    title: "Backend, APIs & Databases",
+  aiAssisted: {
+    title: "AI-Assisted Dev & Integrations",
+    icon: "Cpu",
+    skills: [
+      "Claude Code (Automated Ticket Workflows)", "Cursor IDE", "Google Antigravity",
+      "Google Gemini API", "ChromaDB (Vector Search)", "Typesense Semantic Search",
+      "ML Integration (XGBoost, LightGBM, SHAP)", "Prompt Engineering & Prototyping"
+    ]
+  },
+  backendData: {
+    title: "Backend, Cloud & Databases",
     icon: "Server",
     skills: [
-      "Python (FastAPI)", "Firebase Firestore", "Firebase Auth & Functions",
-      "Supabase", "SQLite & Isar", "PostgreSQL", "REST APIs (Dio/Retrofit)",
-      "WebSockets", "Typesense Search", "Stripe Payment Gateway"
+      "Python (NumPy, Pandas, Matplotlib, Data Scripting)",
+      "Firebase (Firestore, Auth, Storage, Cloud Functions, FCM)",
+      "Supabase", "Node.js & Express", "PostgreSQL", "Redis",
+      "SQLite / SQFlite & Isar", "RESTful APIs (Dio, Retrofit)",
+      "WebSockets", "Stripe Payment Gateway", "JWT Authentication"
     ]
   },
   securityHardware: {
-    title: "Security, Geolocation & Audio",
+    title: "Security, Maps & DevOps",
     icon: "Shield",
     skills: [
-      "E2EE (PointyCastle RSA/AES)", "HIPAA Compliance Best Practices",
-      "Mapbox API", "Google Maps & OLA Maps", "10m GPS Geolocation",
-      "flutter_soloud (C++ Audio Engine)", "FFT Pitch Detection Algorithms"
-    ]
-  },
-  tools: {
-    title: "Tools, AI Workflow & DevOps",
-    icon: "Cpu",
-    skills: [
-      "Cursor & Claude Code", "Google Antigravity", "Git & GitHub",
-      "CI/CD Pipelines", "App Store Connect", "Google Play Console",
-      "Postman", "Agile & Jira"
+      "E2EE (PointyCastle RSA/AES)", "HIPAA Compliance", "Flutter Secure Storage", "Role-Based MFA",
+      "Google Maps & Places API", "Mapbox & OLA Maps", "flutter_soloud (C++ Audio Engine)",
+      "CI/CD (GitHub Actions, Codemagic, Fastlane)", "Firebase Crashlytics", "Git / GitHub"
     ]
   }
 };
@@ -245,11 +296,13 @@ export const experience = [
     company: "Bacancy Technology",
     location: "Ahmedabad, India",
     type: "Full-Time",
-    description: "Developing scalable, production-grade Flutter applications for global enterprise clients. Leading architectural refactoring towards Clean Architecture, optimizing state management with Riverpod, and integrating robust backend services.",
+    description: "Leading mobile modules and developing high-profile Flutter apps across healthcare (HIPAA), social impact, and logistics. Automated ticket lifecycles with Claude Code resolving 50-60 tickets/day during critical deadlines, mentored juniors, and led technical sharing sessions.",
     keyPoints: [
-      "Spearheaded core feature development on high-profile cross-platform mobile apps.",
-      "Optimized app startup time and frame rendering rates to achieve steady 60fps animations.",
-      "Accelerated team sprint velocity by standardizing reusable Flutter widgets and AI-assisted workflows."
+      "Led the mobile module of a HIPAA-compliant telemedicine platform as sole Flutter developer (50+ screens, Jitsi Meet video, adapted Next.js APIs).",
+      "Automated ticket lifecycle with Claude Code, resolving 50-60 tickets per day for months on a deadline-critical client project.",
+      "Built core features of The Word (E2EE chat with RSA/AES, PointyCastle, Stripe, Gemini AI, Typesense).",
+      "Revamped Goldbank Driver with Mapbox live tracking and shipped releases for Goldbank Live & Sell Gold on App Store and Play Store.",
+      "Shipped releases via CI/CD pipelines (Codemagic, GitHub Actions, Fastlane) backed by unit, widget, and integration tests."
     ]
   },
   {
@@ -258,11 +311,12 @@ export const experience = [
     company: "Radixweb Pvt Ltd",
     location: "Ahmedabad, India",
     type: "Full-Time",
-    description: "Engineered complex client applications across fintech, delivery logistics, and restaurant hospitality. Built custom reactive state pipelines and integrated location-based services.",
+    description: "Built and shipped production Flutter applications across food ordering and logistics. Enforced Clean Architecture and reactive state patterns with GetX and Cubit.",
     keyPoints: [
-      "Delivered production features for logistics and ecommerce apps using GetX and Riverpod.",
-      "Integrated third-party REST APIs and local database caching layers using Isar and SQLite.",
-      "Collaborated closely with QA, UI/UX designers, and backend teams in rapid sprint cycles."
+      "Built DigInn, a healthy-food ordering app live on App Store and Play Store with 3-tier loyalty (Bronze, Silver, Gold).",
+      "Developed meal customization with full nutrition details and integrated Thanx SDK for deep links.",
+      "Integrated REST APIs with dio and Retrofit, Firebase Remote Config, Analytics, FCM, and Isar local storage.",
+      "Created reusable custom widgets, light/dark theming, shared styles, and wrote unit tests."
     ]
   },
   {
@@ -271,9 +325,9 @@ export const experience = [
     company: "Radixweb Pvt Ltd",
     location: "Ahmedabad, India",
     type: "Internship",
-    description: "Underwent rigorous software engineering training focused on Dart, Flutter architecture patterns, responsive UI design, and Git version control.",
+    description: "Underwent intensive software engineering training focused on Dart, Flutter architecture patterns, responsive UI design, and Clean Architecture.",
     keyPoints: [
-      "Built multi-screen test applications adhering to Clean Architecture principles.",
+      "Built a News App using Cubit, dio, and Clean Architecture with category/country filters and keyword suggestions.",
       "Mastered state management paradigms and REST API consumption."
     ]
   }
@@ -282,13 +336,13 @@ export const experience = [
 export const education = [
   {
     degree: "Master of Computer Applications (MCA)",
-    institution: "Parul University",
+    institution: "Parul University, Vadodara",
     year: "2020 - 2022",
     grade: "CGPA: 8.3 / 10"
   },
   {
-    degree: "B.Sc Physics (Honours)",
-    institution: "Krishnath College",
+    degree: "B.Sc. Physics (Honours)",
+    institution: "Krishnath College, West Bengal",
     year: "2016 - 2019",
     grade: "Completed with Honours"
   }

@@ -18,11 +18,14 @@ export default function FeaturedProjects() {
   const [filter, setFilter] = useState('All');
   const [activeModalProject, setActiveModalProject] = useState(null);
 
-  const categories = ['All', 'Mobile', 'Mobile & APIs', 'Python & ML', 'Mobile & Audio'];
+  const categories = ['All', 'Mobile', 'Mobile & APIs', 'Python & AI', 'Mobile & Audio'];
 
   const filteredProjects = filter === 'All' 
     ? featuredProjects 
-    : featuredProjects.filter(p => p.category.includes(filter) || filter.includes(p.category));
+    : featuredProjects.filter(p => {
+        if (filter === 'Python & AI') return p.category.includes('Python') || p.category.includes('AI') || p.category.includes('ML');
+        return p.category.includes(filter);
+      });
 
   return (
     <section id="projects" className="py-24 relative">
