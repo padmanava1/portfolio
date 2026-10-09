@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #1E293B;
+  }
+  body {
+    background-color: #080B11;
+    color: #F1F5F9;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080B11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #02569B;
+}
+
+/* Glowing backgrounds & borders */
+.glow-card {
+  background: rgba(14, 19, 31, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card:hover {
+  border-color: rgba(2, 86, 155, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(1, 117, 194, 0.25);
+  transform: translateY(-2px);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E2E8F0 50%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-flutter {
+  background: linear-gradient(135deg, #38BDF8 0%, #0175C2 50%, #02569B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(2, 86, 155, 0.18) 0%, rgba(8, 11, 17, 0) 70%);
+}
