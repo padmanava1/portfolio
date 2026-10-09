@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
 import { 
   FileDown, 
-  Mail, 
   MapPin, 
   Check, 
   Copy, 
@@ -12,8 +11,10 @@ import {
   Zap, 
   Sparkles,
   Smartphone,
-  Clock
+  Clock,
+  CheckCircle2
 } from 'lucide-react';
+import { FlutterIcon } from './SocialIcons';
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -26,7 +27,7 @@ export default function Hero() {
 
   return (
     <section id="about" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden radial-glow">
-      {/* Decorative background grid and blurs */}
+      {/* Decorative background grid and ambient lighting */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b0a_1px,transparent_1px),linear-gradient(to_bottom,#1e293b0a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-flutter-600/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-10 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -37,7 +38,7 @@ export default function Hero() {
           {/* Left Column: Headlines & Pitch */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
-            {/* Status & Location Pill */}
+            {/* Status & Location Pills */}
             <div className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-flutter-500/10 text-flutter-300 border border-flutter-500/20">
                 <Zap className="w-3.5 h-3.5 text-flutter-400" />
@@ -127,50 +128,61 @@ export default function Hero() {
 
           </div>
 
-          {/* Right Column: Visual Portrait & Micro-Cards */}
+          {/* Right Column: Clean Framed Portrait (No Awkward Floating Badges) */}
           <div className="lg:col-span-5 flex justify-center relative">
             <div className="relative w-72 sm:w-80 md:w-96 group">
               
-              {/* Outer Glow Halo */}
-              <div className="absolute -inset-1.5 bg-gradient-to-tr from-flutter-600 via-cyan-500 to-indigo-600 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              {/* Outer Subtle Glow Halo */}
+              <div className="absolute -inset-1 bg-gradient-to-tr from-flutter-600/40 via-cyan-500/30 to-indigo-600/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-700"></div>
 
-              {/* Portrait Container */}
-              <div className="relative rounded-2xl overflow-hidden border-2 border-slate-700/80 bg-[#0E131F] shadow-2xl">
-                <img
-                  src={personalInfo.profileImg}
-                  alt={personalInfo.name}
-                  className="w-full h-auto object-cover object-center aspect-[3/4] filter contrast-[1.02] brightness-95 group-hover:scale-[1.02] transition-transform duration-500"
-                />
+              {/* Portrait Device-Style Card */}
+              <div className="relative rounded-3xl overflow-hidden border border-slate-700/80 bg-[#0E131F] shadow-2xl p-2.5 bg-gradient-to-b from-slate-800/60 to-[#0E131F]">
                 
-                {/* Subtle bottom gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#080B11] via-transparent to-transparent opacity-60"></div>
-
-                {/* Micro floating badge on bottom */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#0E131F]/90 backdrop-blur-md border border-slate-700/80 flex items-center justify-between shadow-lg">
-                  <div>
-                    <span className="text-xs font-semibold text-white block">Padmanava Karmakar</span>
-                    <span className="text-[11px] text-flutter-300 font-mono">AI Flutter Engineer @ Bacancy</span>
+                {/* Clean Top Header Bar */}
+                <div className="flex items-center justify-between px-3 py-1.5 mb-1.5 text-[11px] text-slate-400 font-mono border-b border-slate-800/60">
+                  <div className="flex items-center gap-1.5 text-flutter-300 font-semibold">
+                    <FlutterIcon className="w-3.5 h-3.5 text-flutter-400" />
+                    <span>Flutter 3.x</span>
                   </div>
-                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-semibold border border-emerald-500/30">
-                    Immediate Joiner
-                  </span>
+                  <div className="flex items-center gap-2 text-slate-400">
+                    <span>iOS</span>
+                    <span className="text-slate-600">•</span>
+                    <span>Android</span>
+                  </div>
                 </div>
-              </div>
 
-              {/* Floating Badge 1: Top Right */}
-              <div className="absolute -top-4 -right-4 bg-[#0E131F]/95 backdrop-blur-md border border-slate-700/90 rounded-xl px-3.5 py-2 shadow-xl animate-float">
-                <div className="flex items-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-full bg-flutter-400 animate-ping"></div>
-                  <span className="text-xs font-bold text-slate-100 font-mono">Riverpod • BLoC</span>
-                </div>
-              </div>
+                {/* Portrait Image Container */}
+                <div className="relative rounded-2xl overflow-hidden aspect-[3/4]">
+                  <img
+                    src={personalInfo.profileImg}
+                    alt={personalInfo.name}
+                    className="w-full h-full object-cover object-center filter contrast-[1.02] brightness-95 group-hover:scale-[1.02] transition-transform duration-500"
+                  />
+                  
+                  {/* Subtle bottom gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080B11]/90 via-transparent to-transparent"></div>
 
-              {/* Floating Badge 2: Bottom Left */}
-              <div className="absolute -bottom-4 -left-4 bg-[#0E131F]/95 backdrop-blur-md border border-slate-700/90 rounded-xl px-3.5 py-2 shadow-xl">
-                <div className="flex items-center gap-2">
-                  <span className="text-base">⚡</span>
-                  <span className="text-xs font-bold text-slate-100">50–60 Tickets/Day (Claude Code)</span>
+                  {/* Clean Bottom Caption Bar */}
+                  <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#0E131F]/90 backdrop-blur-md border border-slate-700/80 flex items-center justify-between shadow-lg">
+                    <div>
+                      <span className="text-xs font-semibold text-white block">{personalInfo.name}</span>
+                      <span className="text-[11px] text-flutter-300 font-mono">AI Flutter Engineer</span>
+                    </div>
+                    <span className="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold border border-emerald-500/30">
+                      Immediate Joiner
+                    </span>
+                  </div>
                 </div>
+
+                {/* Grounded Status Footer Strip */}
+                <div className="mt-2.5 px-3 py-2 rounded-xl bg-slate-900/80 border border-slate-800/80 flex items-center justify-between text-xs text-slate-300">
+                  <div className="flex items-center gap-1.5 text-flutter-300 font-medium">
+                    <span className="w-1.5 h-1.5 rounded-full bg-flutter-400"></span>
+                    <span>Clean Architecture</span>
+                  </div>
+                  <span className="text-[11px] text-slate-400 font-mono">60 FPS Native</span>
+                </div>
+
               </div>
 
             </div>
