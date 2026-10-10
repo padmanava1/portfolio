@@ -1,14 +1,15 @@
 export const personalInfo = {
   name: "Padmanava Karmakar",
-  role: "AI Flutter Engineer",
+  role: "Flutter Developer (Mobile App Developer) | AI-Assisted Development",
   headline: "Building High-Performance Cross-Platform Apps with Clean Architecture & AI-Augmented Velocity",
-  bio: "AI Flutter Engineer with 4.5+ years of production experience shipping high-impact, cross-platform apps for iOS & Android across healthcare (HIPAA), e-commerce, logistics, and real-time systems. Advanced practitioner of AI-assisted development (Claude Code, Cursor, Antigravity)—automated an end-to-end workflow resolving 50–60 tickets/day on deadline-critical client deliveries while enforcing strict Clean Architecture.",
+  bio: "Flutter developer with 4.5 years of experience building cross-platform iOS and Android apps for healthcare, fintech, logistics and food delivery. Shipped apps to the App Store and Play Store, led the mobile side of a HIPAA telemedicine product, and use Claude Code and Cursor daily to move faster. Work directly with clients and sit in on technical interviews that help win new projects.",
   location: "Ahmedabad, Gujarat, India",
   availability: "Immediate Joiner • Open to Relocation",
   email: "karpadmanava16@gmail.com",
   phone: "+91-7908767307",
   linkedin: "https://www.linkedin.com/in/padmanava-karmakar-5069641b6",
   github: "https://github.com/padmanava1",
+  portfolioUrl: "https://padmanava1.github.io/portfolio",
   resumeUrl: "./Padmanava_Karmakar_Resume.pdf",
   profileImg: "./profile.jpg",
   status: "Immediate Joiner",
@@ -23,12 +24,35 @@ export const stats = [
 
 export const featuredProjects = [
   {
+    id: "cafeasy",
+    title: "Cafeasy",
+    tagline: "Location-Aware RAG Recommendation Engine with Vector Search & Maps (Live Product)",
+    badge: "Live RAG Product",
+    category: "Python & AI",
+    featuredRank: 1,
+    teamSize: "AI-Assisted Personal Product",
+    role: "AI & Full-Stack Developer",
+    liveUrl: "https://cafeasy.onrender.com/",
+    summary: "A production location-aware Retrieval-Augmented Generation (RAG) recommendation engine built over scraped cafe data. Delivers hallucination-free answers grounded strictly in stored places, each backed by a verified Google Maps link and interactive map view.",
+    architectureHighlight: "Hybrid vector search powered by ChromaDB dense embeddings, served through a FastAPI backend and deployed live on Render; guarantees answers only from stored records to eliminate AI hallucinations.",
+    techStack: [
+      "Python", "FastAPI", "ChromaDB", "RAG Pipeline",
+      "Vector Embeddings", "LLMs", "Google Maps API", "Render Deployment"
+    ],
+    highlights: [
+      "Live Production App: Hosted and live at cafeasy.onrender.com with real-time interactive UI.",
+      "Hallucination-Free RAG: Dense vector embeddings guarantee LLMs strictly recommend verified, stored places.",
+      "Google Maps Integration: Every suggestion includes an authentic, checked Google Maps link and an interactive map view.",
+      "End-to-End AI-Assisted Build: Prototyped and shipped rapidly utilizing Claude Code, Cursor, and Antigravity."
+    ]
+  },
+  {
     id: "the-word",
     title: "The Word",
     tagline: "Social Impact Platform with Military-Grade E2EE Messaging & Gemini AI",
     badge: "Security & Real-Time",
     category: "Mobile",
-    featuredRank: 1,
+    featuredRank: 2,
     teamSize: "3 developers (scaled to 2)",
     role: "Software Engineer",
     summary: "A comprehensive social impact mobile application connecting donors, charities, and communities through secure real-time communication, donation tracking, and community engagement.",
@@ -52,11 +76,11 @@ export const featuredProjects = [
     tagline: "HIPAA-Compliant Multi-Portal Healthcare System with Video Calling",
     badge: "Healthcare & Fintech",
     category: "Mobile & APIs",
-    featuredRank: 2,
+    featuredRank: 3,
     teamSize: "Sole Flutter Dev (1 of 4 Mobile API Developers)",
     role: "Mobile Module Lead & API Developer",
     summary: "A production-grade, HIPAA-compliant telehealth platform with three distinct role-based portals: Patient, Doctor, and Admin, complete with video consultations (Jitsi Meet SDK) and appointment booking.",
-    architectureHighlight: "Built the entire Flutter frontend from scratch across all 3 portals (50+ screens) and adapted the platform's Next.js web APIs for mobile compatibility across auth, patient, doctor, and admin flows.",
+    architectureHighlight: "Built 50+ screens for patient, doctor, and admin roles as sole Flutter developer; adapted the platform's Next.js web APIs for mobile compatibility across auth, appointment booking, and admin flows.",
     techStack: [
       "Flutter", "Dart", "Riverpod", "Dio", "GoRouter",
       "Jitsi Meet SDK", "flutter_secure_storage", "Stripe",
@@ -76,17 +100,17 @@ export const featuredProjects = [
     tagline: "High-Value Parcel Logistics & Luxury Precious Metals Marketplace (London, UK)",
     badge: "Logistics & Fintech",
     category: "Mobile",
-    featuredRank: 3,
+    featuredRank: 4,
     teamSize: "2 developers, QA, Manager",
     role: "Software Engineer",
     summary: "A multi-app London-based ecosystem encompassing driver parcel collection/delivery tracking via Mapbox and luxury gold, silver, and platinum trading apps with live foreign exchange pricing.",
-    architectureHighlight: "Revamped collection workflow with Riverpod and integrated Mapbox API for live London dispatch tracking mirrored in real-time on the management panel.",
+    architectureHighlight: "Rebuilt the driver app for a London logistics client with live journey tracking synced to the admin panel; shipped several releases of Goldbank Live on App Store and Play Store and maintained Sell Gold.",
     techStack: [
       "Flutter", "Dart", "Riverpod", "GetX", "Mapbox API",
       "REST APIs", "Live Foreign Exchange Rates", "Real-Time Sync"
     ],
     highlights: [
-      "Goldbank Driver: Revamped London courier app with live GPS parcel collection/drop-off journeys using Mapbox API.",
+      "Goldbank Driver: Rebuilt London courier app with live GPS parcel collection/drop-off journeys using Mapbox API.",
       "Goldbank Live: Interactive live showroom on App Store and Play Store featuring luxury jewelry and streaming FX & cryptocurrency price tickers.",
       "Sell Gold: Precision price-locking mechanism enabling customers to lock in real-time gold/silver prices with courier collection."
     ]
@@ -97,7 +121,7 @@ export const featuredProjects = [
     tagline: "Full-Stack AI-Powered E-Commerce Ecosystem (Mobile App, Admin & APIs)",
     badge: "Full-Stack Ecosystem",
     category: "Mobile & APIs",
-    featuredRank: 4,
+    featuredRank: 5,
     teamSize: "Full Ecosystem Architecture",
     role: "Full-Stack Mobile Engineer",
     summary: "A complete end-to-end commerce ecosystem consisting of a Flutter mobile shopping app, a Node.js/Express REST backend with JWT authentication and PostgreSQL, and a React + Vite admin dashboard.",
@@ -120,7 +144,7 @@ export const featuredProjects = [
     tagline: "Healthy Food Ordering App with Multi-Tier Loyalty Engine (Live on App Store & Play Store)",
     badge: "Commerce & Loyalty",
     category: "Mobile",
-    featuredRank: 5,
+    featuredRank: 6,
     teamSize: "2 developers, QA, Tech Lead",
     role: "Software Developer",
     summary: "A restaurant mobile application focused on customized healthy meals, full nutritional and calorie tracking, pickup/delivery scheduling, and a 3-tier customer loyalty rewards system.",
@@ -137,27 +161,6 @@ export const featuredProjects = [
     ]
   },
   {
-    id: "cafeasy",
-    title: "Cafeasy",
-    tagline: "Location-Aware RAG Recommendation Engine with Vector Search & Maps",
-    badge: "AI & Retrieval (RAG)",
-    category: "Python & AI",
-    featuredRank: 6,
-    teamSize: "AI-Assisted Personal Project",
-    role: "AI Engineer",
-    summary: "A location-aware Retrieval-Augmented Generation (RAG) recommendation engine running hybrid vector search over cafe data, grounding LLM outputs to eliminate hallucinations.",
-    architectureHighlight: "Grounded LLM responses strictly in retrieved vector records using ChromaDB dense embeddings; every recommended venue is verified against Google Maps coordinates on a real-time map.",
-    techStack: [
-      "Python", "ChromaDB", "Vector Embeddings", "LLMs",
-      "Google Maps API", "AI-Assisted Development"
-    ],
-    highlights: [
-      "Hallucination-Free Recommendations: Dense vector embeddings guarantee LLMs only recommend real, verified venues.",
-      "Google Maps Integration: Every recommendation links directly to verified Google Maps locations and displays on an interactive map.",
-      "AI-Augmented Build: Engineered end-to-end utilizing Claude Code and Cursor."
-    ]
-  },
-  {
     id: "astraquant",
     title: "AstraQuant",
     tagline: "AI Stock Intelligence & Explainable Predictions App (NSE/BSE)",
@@ -169,7 +172,7 @@ export const featuredProjects = [
     summary: "Market intelligence app delivering ML-driven stock predictions, real-time sentiment analysis, portfolio tracking, and market regime detection for retail investors in Indian equity markets.",
     architectureHighlight: "Flutter frontend communicating over WebSockets; combines XGBoost, LightGBM, and custom expert models with SHAP-based explainability for prediction transparency.",
     techStack: [
-      "Flutter", "Riverpod", "fl_chart", "Python",
+      "Flutter", "Riverpod", "fl_chart", "Python", "FastAPI",
       "XGBoost", "LightGBM", "SHAP Explainability", "WebSockets", "Redis", "PostgreSQL"
     ],
     highlights: [
@@ -225,110 +228,99 @@ export const featuredProjects = [
 export const workflowHighlights = {
   title: "The AI-Assisted Workflow Edge",
   subtitle: "50–60 Tickets/Day Velocity with Strict Clean Architecture",
-  description: "Advanced practitioner of modern AI-assisted engineering with Claude Code, Cursor, and Antigravity. Automated an end-to-end ticket lifecycle (pick up, implement, test, update, close) that resolved 50–60 tickets per day for several months on a deadline-critical client project, without compromising type safety, testability, or Clean Architecture.",
+  description: "Advanced practitioner of modern AI-assisted engineering with Claude Code, Cursor, and Antigravity. Automated an end-to-end ticket lifecycle (pick up, implement, test, update, close) that resolved 50–60 tickets per day for several months on a tight client deadline, while maintaining pre-sales excellence, technical client demos, and strict Clean Architecture.",
   principles: [
     {
       title: "50-60 Tickets / Day Automation",
-      desc: "Proven execution automating ticket resolution pipelines with Claude Code during high-stakes client delivery deadlines."
+      desc: "Proven execution setting up Claude Code workflows that cleared 50-60 tickets a day for several months on a deadline-critical client project."
+    },
+    {
+      title: "Pre-Sales & Client Interviews",
+      desc: "Actively involved in client technical interviews and live demos that help win new enterprise projects, explaining architecture with clarity."
     },
     {
       title: "Strict Clean Architecture",
       desc: "Separation of Presentation, Domain, and Data layers. AI generates code rapidly; human engineering enforces SOLID design, dependency injection (GetIt), and state isolation."
     },
     {
-      title: "Real-Time Debugging & Tests",
-      desc: "Writing unit, widget, and integration tests at lightspeed, catching asynchronous race conditions before code touches PR."
-    },
-    {
-      title: "Python Data Scripting",
-      desc: "Practical Python proficiency (NumPy, Pandas, Matplotlib) for data manipulation, embedding pipelines, and scripts powered by modern AI dev tools."
+      title: "Technical Mentorship & Articles",
+      desc: "Led Bacancy's Stack Overflow group, authored Medium technical articles, mentored juniors, and joined the company AI program on Claude Code, Codex, and Cursor."
     }
   ]
 };
 
 export const skillsData = {
   mobile: {
-    title: "Flutter & Mobile Core",
+    title: "Flutter & Mobile",
     icon: "Smartphone",
     skills: [
-      "Flutter 3 & Dart (4.5+ Yrs)", "Riverpod", "BLoC & Cubit", "GetX", "Provider",
-      "Clean Architecture", "MVVM & SOLID", "Dependency Injection (GetIt)",
-      "Material Design 3", "Responsive / Adaptive UI", "Platform Channels",
-      "Video Calling (Jitsi Meet SDK)", "flutter_animate & Lottie",
-      "App Performance Optimization", "App Store & Play Store Releases"
+      "Flutter & Dart (4.5 Yrs)", "Material Design 3", "Responsive / Adaptive UI",
+      "Custom Widgets & Animations", "Isolates", "Localization (i18n)",
+      "Flutter Web", "In-App Purchases", "Platform Channels (Kotlin, Swift)",
+      "Deep Links", "Push Notifications", "Offline Sync", "Build Flavors",
+      "Performance Optimization"
     ]
   },
-  aiAssisted: {
-    title: "AI-Assisted Dev & Integrations",
-    icon: "Cpu",
+  architecture: {
+    title: "State Management & Architecture",
+    icon: "Layers",
     skills: [
-      "Claude Code (Automated Ticket Workflows)", "Cursor IDE", "Google Antigravity",
-      "Google Gemini API", "ChromaDB (Vector Search)", "Typesense Semantic Search",
-      "ML Integration (XGBoost, LightGBM, SHAP)", "Prompt Engineering & Prototyping"
+      "Bloc & Cubit", "Riverpod", "Provider", "GetX",
+      "Clean Architecture", "MVVM & SOLID", "Dependency Injection (GetIt)",
+      "GoRouter", "Code Generation (build_runner)"
     ]
   },
   backendData: {
-    title: "Backend, Cloud & Databases",
+    title: "Backend, Data & Cloud",
     icon: "Server",
     skills: [
-      "Python (NumPy, Pandas, Matplotlib, Data Scripting)",
-      "Firebase (Firestore, Auth, Storage, Cloud Functions, FCM)",
-      "Supabase", "Node.js & Express", "PostgreSQL", "Redis",
-      "SQLite / SQFlite & Isar", "RESTful APIs (Dio, Retrofit)",
-      "WebSockets", "Stripe Payment Gateway", "JWT Authentication"
+      "Firebase (Firestore, Auth, Cloud Functions, FCM, Remote Config, Crashlytics)",
+      "Supabase", "REST APIs", "JSON & dio", "Retrofit", "WebSockets",
+      "Node.js", "Python", "FastAPI", "PostgreSQL", "SQLite & Isar"
     ]
   },
-  securityHardware: {
-    title: "Security, Maps & DevOps",
-    icon: "Shield",
+  integrationsTools: {
+    title: "Integrations, AI & DevOps",
+    icon: "Cpu",
     skills: [
-      "E2EE (PointyCastle RSA/AES)", "HIPAA Compliance", "Flutter Secure Storage", "Role-Based MFA",
-      "Google Maps & Places API", "Mapbox & OLA Maps", "flutter_soloud (C++ Audio Engine)",
-      "CI/CD (GitHub Actions, Codemagic, Fastlane)", "Firebase Crashlytics", "Git / GitHub"
+      "Google Maps & Mapbox", "Stripe Payments", "Video Calling (Jitsi Meet SDK)",
+      "RSA/AES Encryption & Secure Storage", "MFA & HIPAA Compliance",
+      "Google Gemini API & ChromaDB", "App Store & Play Store Deployment",
+      "Web Deployment (Vercel, GitHub Pages)", "CI/CD (GitHub Actions, Codemagic, Fastlane)",
+      "Claude Code, Codex, Cursor & Antigravity"
     ]
   }
 };
 
 export const experience = [
   {
-    period: "Sept 2023 - Present",
+    period: "Sep 2023 - Present",
     role: "Software Engineer",
     company: "Bacancy Technology",
     location: "Ahmedabad, India",
     type: "Full-Time",
-    description: "Leading mobile modules and developing high-profile Flutter apps across healthcare (HIPAA), social impact, and logistics. Automated ticket lifecycles with Claude Code resolving 50-60 tickets/day during critical deadlines, mentored juniors, and led technical sharing sessions.",
+    description: "Leading mobile modules, handling pre-sales technical interviews, client demos, and setting up AI-assisted workflows. Automated ticket resolution with Claude Code clearing 50-60 tickets/day during critical deadlines.",
     keyPoints: [
-      "Led the mobile module of a HIPAA-compliant telemedicine platform as sole Flutter developer (50+ screens, Jitsi Meet video, adapted Next.js APIs).",
-      "Automated ticket lifecycle with Claude Code, resolving 50-60 tickets per day for months on a deadline-critical client project.",
-      "Built core features of The Word (E2EE chat with RSA/AES, PointyCastle, Stripe, Gemini AI, Typesense).",
-      "Revamped Goldbank Driver with Mapbox live tracking and shipped releases for Goldbank Live & Sell Gold on App Store and Play Store.",
-      "Shipped releases via CI/CD pipelines (Codemagic, GitHub Actions, Fastlane) backed by unit, widget, and integration tests."
+      "Worked on solo and team projects, handling estimates, development, CI/CD pipelines, and App Store/Play Store deployment.",
+      "Part of the pre-sales team: joined client technical interviews that helped win new projects, and handled regular client calls and demos.",
+      "Set up a Claude Code workflow that picked up, fixed, tested, and closed tickets, clearing 50-60 tickets a day for several months on a tight client deadline.",
+      "Led the Stack Overflow answering group, took internal technical sessions, mentored juniors, reviewed code, wrote Medium articles for Bacancy, and joined the company AI program on Claude Code, Codex, and Cursor.",
+      "Telemedicine app (HIPAA): Mobile lead and only Flutter developer; built 50+ screens for patient, doctor, and admin, including video consultations (Jitsi), Stripe, OTP MFA, and adapted Next.js web APIs.",
+      "The Word: Built encrypted chat (RSA/AES), real-time messaging, Stripe donations, search, and Gemini-based features.",
+      "Goldbank Driver, Goldbank Live & Sell Gold: Rebuilt driver app for London logistics with live journey tracking; shipped several releases of Goldbank Live and maintained Sell Gold."
     ]
   },
   {
-    period: "Sept 2022 - Aug 2023",
+    period: "Feb 2022 - Aug 2023",
     role: "Associate Software Engineer",
-    company: "Radixweb Pvt Ltd",
+    company: "Radixweb",
     location: "Ahmedabad, India",
-    type: "Full-Time",
+    type: "Full-Time (Started as Trainee Feb 2022)",
     description: "Built and shipped production Flutter applications across food ordering and logistics. Enforced Clean Architecture and reactive state patterns with GetX and Cubit.",
     keyPoints: [
-      "Built DigInn, a healthy-food ordering app live on App Store and Play Store with 3-tier loyalty (Bronze, Silver, Gold).",
-      "Developed meal customization with full nutrition details and integrated Thanx SDK for deep links.",
+      "Built DigInn (live on App Store & Play Store): built screens, reusable widgets, light/dark themes, meal customisation, and a 3-tier loyalty program; shipped several releases and wrote unit tests.",
       "Integrated REST APIs with dio and Retrofit, Firebase Remote Config, Analytics, FCM, and Isar local storage.",
-      "Created reusable custom widgets, light/dark theming, shared styles, and wrote unit tests."
-    ]
-  },
-  {
-    period: "Feb 2022 - Aug 2022",
-    role: "Trainee Software Engineer",
-    company: "Radixweb Pvt Ltd",
-    location: "Ahmedabad, India",
-    type: "Internship",
-    description: "Underwent intensive software engineering training focused on Dart, Flutter architecture patterns, responsive UI design, and Clean Architecture.",
-    keyPoints: [
-      "Built a News App using Cubit, dio, and Clean Architecture with category/country filters and keyword suggestions.",
-      "Mastered state management paradigms and REST API consumption."
+      "Started as a trainee; learned code review, Flutter good practices, and client communication from the senior team."
     ]
   }
 ];
@@ -336,13 +328,13 @@ export const experience = [
 export const education = [
   {
     degree: "Master of Computer Applications (MCA)",
-    institution: "Parul University, Vadodara",
+    institution: "Parul University",
     year: "2020 - 2022",
-    grade: "CGPA: 8.3 / 10"
+    grade: "CGPA 8.3 / 10"
   },
   {
-    degree: "B.Sc. Physics (Honours)",
-    institution: "Krishnath College, West Bengal",
+    degree: "B.Sc. Physics (Hons)",
+    institution: "Krishnath College",
     year: "2016 - 2019",
     grade: "Completed with Honours"
   }

@@ -1,10 +1,11 @@
 import React from 'react';
 import { skillsData } from '../data/portfolioData';
-import { Smartphone, Server, Shield, Cpu, CheckCircle } from 'lucide-react';
+import { Smartphone, Layers, Server, Shield, Cpu, CheckCircle } from 'lucide-react';
 
 export default function SkillsMatrix() {
   const iconMap = {
     Smartphone: Smartphone,
+    Layers: Layers,
     Server: Server,
     Shield: Shield,
     Cpu: Cpu,

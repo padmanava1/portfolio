@@ -148,13 +148,27 @@ export default function FeaturedProjects() {
                   )}
                 </div>
 
-                <button
-                  onClick={() => setActiveModalProject(project)}
-                  className="w-full py-2.5 px-4 rounded-xl bg-slate-800/80 hover:bg-flutter-600 text-slate-200 hover:text-white text-xs font-semibold transition-all flex items-center justify-center gap-1.5 group/btn"
-                >
-                  <span>View Full Details & Architecture</span>
-                  <ChevronRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                <div className="flex items-center gap-2">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="py-2.5 px-3.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 hover:text-emerald-200 text-xs font-semibold transition-all flex items-center justify-center gap-1.5 shrink-0 shadow-sm"
+                      title="Open live product"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5 text-emerald-400" />
+                      <span>Live App</span>
+                    </a>
+                  )}
+                  <button
+                    onClick={() => setActiveModalProject(project)}
+                    className="flex-1 py-2.5 px-3.5 rounded-xl bg-slate-800/80 hover:bg-flutter-600 text-slate-200 hover:text-white text-xs font-semibold transition-all flex items-center justify-center gap-1.5 group/btn"
+                  >
+                    <span>View Architecture</span>
+                    <ChevronRight className="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" />
+                  </button>
+                </div>
               </div>
 
             </div>
@@ -179,12 +193,25 @@ export default function FeaturedProjects() {
                     {activeModalProject.tagline}
                   </p>
                 </div>
-                <button
-                  onClick={() => setActiveModalProject(null)}
-                  className="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors"
-                >
-                  <X className="w-5 h-5" />
-                </button>
+                <div className="flex items-center gap-2">
+                  {activeModalProject.liveUrl && (
+                    <a
+                      href={activeModalProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 transition-all"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Live App</span>
+                    </a>
+                  )}
+                  <button
+                    onClick={() => setActiveModalProject(null)}
+                    className="p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
 
               {/* Modal Body */}
@@ -229,7 +256,18 @@ export default function FeaturedProjects() {
               </div>
 
               {/* Modal Footer */}
-              <div className="p-4 border-t border-slate-800 bg-slate-900/50 flex justify-end">
+              <div className="p-4 border-t border-slate-800 bg-slate-900/50 flex items-center justify-between">
+                {activeModalProject.liveUrl ? (
+                  <a
+                    href={activeModalProject.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center gap-1.5 shadow-md shadow-emerald-950 transition-all"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Open Live Product ({activeModalProject.liveUrl.replace('https://', '').replace('/', '')})</span>
+                  </a>
+                ) : <div />}
                 <button
                   onClick={() => setActiveModalProject(null)}
                   className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold"
